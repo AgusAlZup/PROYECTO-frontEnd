@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/ICONO.ico" type="image/x-icon"> 
+</head>
+<body>
+    <header>
+      <!-- <div id="logoheader">
+            <img src="/static/img/ICONO.ico" alt="logo">
+        </div> -->
+        <div class="titulo">
+            <h1>Libreria OLYMPO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/templates/catalogo.html">Catalogo</a></li>
+                    <li><a href="/templates/tarots y oraculo .html"> Tarots y oraculo</a></li>
+                    <li><a href="http://www.libreriaolympo.com.ar" target="_blank">Tienda ONLINE</a></li>
+                   
+                </ul>
+            </nav>
+    </header>
+    <main>
+    <section id="enviosZona"> 
+        <h4>ENVÍOS</h4>
+        <TABLE border="1">
+        <tr>
+            <th>ZONA </th>
+            <th>COSTO DE ENVÍO  </th>
+            <th>DÍAS </th>
+        </tr>
+        <TR>
+            <td>CABA Y VICENTE LOPEZ </td>
+            <td>GRATIS</td>
+            <td>MARTES Y VIERNES</td>
+        </TR>
+        
+        <TR>
+            <td>OESTE</td>
+            <td>GRATIS</td>
+            <td>MARTES</td>
+        </TR>
+        
+        <TR>
+            <td>SUR</td>
+            <td>GRATIS</td>
+            <td>VIERNES</td>
+        </TR>
+        
+        <TR>
+            <td>NORTE</td>
+            <td>$3.000</td>
+            <td>MARTES Y VIERNES</td>
+        </TR>
+        <TR>
+            <td>LA PLATA</td>
+            <td>$10.000</td>
+            <td>VIERNES</td>
+        </TR>
+        <TR>
+            <td>INTERIOR DEL PAIS</td>
+            <td>CONSULTAR</td>
+            <td>MARTES Y VIERNES</td>
+        </TR>
+        </TABLE>
+    </section>
+        <br>
+
+    <section id="mapagoogle">
+        <CENTER><div>
+            <h4>UBICACIÓN</h4> <BR>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0528012880022!2d-58.45674302426198!3d-34.552218472972875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd817358e89c402d%3A0xad143a6fd4303577!2sLibreria%20Olympo!5e0!3m2!1ses!2sar!4v1711766785131!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div></CENTER>
+    </section>
+    <br>
+
+    <section class="formulario">
+        <h2>Dejanos tus datos para recibir novedades y descuentos!</h2>
+    <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+        
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+        
+        <label for="motivo">Motivo de Contacto:</label><br>
+        <select id="motivo" name="motivo" required>
+            <option value="">Seleccione...</option>
+            <option value="consulta">Consulta</option>
+            <option value="comentario">Comentario</option>
+            <option value="sugerencia">Sugerencia</option>
+        </select><br>
+        
+        <label>Preferencias de contacto:</label><br>
+        <input type="checkbox" id="emailPref" name="preferencias" value="email">
+        <label for="emailPref">Email</label><br>
+        <input type="checkbox" id="telefonoPref" name="preferencias" value="telefono">
+        <label for="telefonoPref">Teléfono</label><br>
+        
+        <label>Adjuntar imagen:</label><br>
+        <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+    <!-- <section class="formulario"> 
+        <h2> Dejanos tus datos para recibir novedades y descuentos!</h2>
+        <form action="LINK" method="post" target="_blank"></form>
+        <div>
+        <label for="firstname"> Nombre:</label>
+        <input  size="30" type="text"  name="firstname" id="firstname" required>
+        </div>
+        <br>
+        <div>
+        <label for="surname"> Apellido:</label>
+        <input  size="30" type="text"  name="surname" id="surname">
+        </div>
+        <br>
+        <div>
+         <label for="telefono"> Telefono: </label>
+        <input  size="30" type="number" name="telefono" id="telofono" required >
+        </div>
+        <br>
+        <div>
+        <label for="email"> Email:</label>
+        <input  size="30" type="email"  name="email" id="email" required>
+        </div> 
+        <br>
+            <div>
+                <label for="mensaje"> Mensaje:</label>
+                <input  size="60" type="text"  name="mensaje" id="mensaje" required >
+            </div>
+        <BR>
+        <input type="submit" value="ENVIAR">
+    </section> -->
+</main>
+</body>
+<script src="/static/js/contacto.js"></script>
+</html>

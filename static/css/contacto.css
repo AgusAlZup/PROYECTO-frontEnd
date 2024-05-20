@@ -1,0 +1,92 @@
+body{
+    background-image: url('../img/fondo\ img.jpeg');
+    background-size:contain; /* para que la imagen cubra todo el fondo */
+    backface-visibility:initial;
+  
+}    
+
+#enviosZona {
+    background-image: url(/static/img/hand-drawn-mystical-background_79603-2049.jpg);
+    width: 90%; 
+    padding: 15px;
+    justify-content: center;
+}
+
+#enviosZona, #mapagoogle{
+    color: aqua;
+    display: flex;
+    font-display:initial;
+    align-items: center;
+    justify-content: center;
+}
+
+/*formulario!*/
+
+
+.formulario{
+    text-align: center;
+    color: #b97e7e;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #5d5252;
+    border-radius: 10px;
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    margin: top 10px;;
+
+}
+
+label {
+    display:inline-block;
+    justify-content: center;
+    align-items: center; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
